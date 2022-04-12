@@ -6,9 +6,12 @@
 
 body{
     margin: 0 auto;
+    background-color: #0d1117;
+    color: white;
 }
 
 .container{
+    border-top: 1px solid grey;
     display:flex ;
     flex-direction: column;
     align-items: center;
@@ -20,7 +23,7 @@ body{
     text-align: left;
     padding: 0.625rem;
     margin: 1.25rem;
-    border: 1px solid blue;
+    border: 1px solid grey;
     border-radius: 0.625rem;
     width: 60%;
 }
