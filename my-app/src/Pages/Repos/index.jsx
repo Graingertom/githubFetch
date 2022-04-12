@@ -1,3 +1,3 @@
 import React from 'react';
 
-export const Repos = () => <h1>Welcome!</h1>
+export const Repos = () => <h1>Your Repos!</h1>

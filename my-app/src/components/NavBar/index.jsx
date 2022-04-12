@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 const NavBar = ({getUser}) => {
 
+    const goTo = useNavigate();
+
     const [ username, setUsername ] = useState('')
 
-    const handleSubmit = e => {
+    const handleSubmit = (e) => {
         e.preventDefault();
         getUser(username);
+        goTo(`${username}`)
     }
 
     const updateInput = e => {
