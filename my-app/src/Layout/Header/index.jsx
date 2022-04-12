@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
+import { ImGithub } from 'react-icons/im'
+import './styles.css'
 
 const Header = ({getUser}) => {
 
@@ -20,11 +22,11 @@ const Header = ({getUser}) => {
 
     return (
         <nav>
+            <ImGithub className='gitLogo'/>
             <form className='searchBar' onSubmit={handleSubmit}>
-                <input type="text" onChange={updateInput}></input>
-                <input type="submit" value="Search" />
+                <input type="text" placeholder="Search for a Github User" onChange={updateInput}></input>
             </form>
-          <NavLink className="home-link" to="/">Home</NavLink>  
+          <NavLink to="/">Home</NavLink>  
         </nav>
     )
 }
