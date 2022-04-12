@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+}
+
+.container{
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 0.625rem;
+    margin: 1.25rem;
+    border: 1px solid blue;
+    border-radius: 0.625rem;
+    width: 60%;
+}
+
+.icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+svg{
+    vertical-align: bottom;
+    cursor: pointer;
+    font-size: 1.25rem;
+}
+
+span{
+    vertical-align:sub;
+    color: grey;
+}
+
+svg :hover{
+    color: black;
+}
