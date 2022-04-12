@@ -2,12 +2,11 @@ import React from 'react';
 // import Container from 'react-bootstrap/Container';
 // import Row from 'react-bootstrap/Row';
 // import Col from 'react-bootstrap/Col';
-import { DisplayResults } from '../../components';
 import './style.css';
 
 
-export const Home = ({User}) => 
-(
+export const Home = () => {
+return (
     <div className="container">
        {/* <div className='row'>
             <h3>Name</h3>
@@ -70,6 +69,5 @@ export const Home = ({User}) =>
             </div>
        </div> */}
        <h1>This is the homepage</h1>
-       {User && <DisplayResults user={User} />}
   </div>
-)
+)}

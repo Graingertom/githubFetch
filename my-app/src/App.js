@@ -4,7 +4,6 @@ import axios from 'axios';
 import { Routes, Route } from 'react-router-dom';
 import { Layout } from './Layout';
 import './App.css';
-import { DisplayResults } from './components';
 
 function App() {
 
@@ -25,8 +24,8 @@ function App() {
         <main>
           <Routes>
               <Route path="/" element={<Layout getUser={userFetch} />}>
-                <Route index element={<Pages.Home user={userData} />} />
-                <Route path=":username" element={<DisplayResults />}>
+                <Route index element={<Pages.Home />} />
+                <Route path=":username" element={<Pages.Repos user={userData} />}>
                 </Route>
               </Route>
           </Routes>

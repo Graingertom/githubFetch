@@ -6,8 +6,11 @@ import {AiOutlineStar, AiOutlineFork} from 'react-icons/ai';
 import {VscIssues, VscGitPullRequest } from 'react-icons/vsc';
 import './style.css';
 
-export const DisplayResults = () => {
+export const DisplayResults = ({user}) => {
+    console.log(user)
     return(
+        <>
+        <h1>Username's Repos</h1>
         <div className='row'>
         <h3>Name</h3>
         <p>description</p>
@@ -20,5 +23,6 @@ export const DisplayResults = () => {
             <span>Udpated</span>
         </div>
    </div>
+   </>
     )
 }
