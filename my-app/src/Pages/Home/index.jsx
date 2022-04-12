@@ -6,7 +6,7 @@ import { DisplayResults } from '../../components';
 import './style.css';
 
 
-export const Home = () => 
+export const Home = ({User}) => 
 (
     <div className="container">
        {/* <div className='row'>
@@ -69,6 +69,7 @@ export const Home = () =>
                 <span>Udpated</span>
             </div>
        </div> */}
-       <DisplayResults />
+       <h1>This is the homepage</h1>
+       {User && <DisplayResults user={User} />}
   </div>
 )
