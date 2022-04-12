@@ -1,7 +1,7 @@
 import React from 'react';
-import * as Pages from '../Pages'
+import * as Pages from './Pages'
 import { Routes, Route } from 'react-router-dom';
-import { NavBar } from '../components'
+import { NavBar } from './components'
 import './App.css';
 
 function App() {
