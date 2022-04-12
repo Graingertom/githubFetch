@@ -2,15 +2,14 @@ import React from 'react';
 // import Container from 'react-bootstrap/Container';
 // import Row from 'react-bootstrap/Row';
 // import Col from 'react-bootstrap/Col';
-import {AiOutlineStar, AiOutlineFork} from 'react-icons/ai';
-import {VscIssues, VscGitPullRequest } from 'react-icons/vsc';
+import { DisplayResults } from '../../components';
 import './style.css';
 
 
 export const Home = () => 
 (
     <div className="container">
-       <div className='row'>
+       {/* <div className='row'>
             <h3>Name</h3>
             <p>description</p>
             <div className="icon">
@@ -69,6 +68,7 @@ export const Home = () =>
                 <span>pull request</span>
                 <span>Udpated</span>
             </div>
-       </div>
+       </div> */}
+       <DisplayResults />
   </div>
 )

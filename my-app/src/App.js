@@ -21,7 +21,7 @@ function App() {
           <Routes>
               <Route path="/" element={<Layout getUser={userFetch} />}>
                 <Route index element={<Pages.Home />} />
-                <Route path=":username" element={<Pages.Repos />}>
+                <Route path=":username" element={<Pages.Home />}>
                 </Route>
               </Route>
           </Routes>
