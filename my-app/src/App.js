@@ -2,7 +2,7 @@ import React from 'react';
 import * as Pages from './Pages'
 import axios from 'axios';
 import { Routes, Route } from 'react-router-dom';
-import { NavBar } from './components'
+import { Layout } from './Layout';
 import './App.css';
 
 function App() {
@@ -17,10 +17,10 @@ function App() {
 
   return (
     <div className="App">
-      <NavBar getUser={userFetch}/>
         <main>
           <Routes>
-              <Route path="/" element={<Pages.Home />}>
+              <Route path="/" element={<Layout getUser={userFetch} />}>
+                <Route index element={<Pages.Home />} />
                 <Route path=":username" element={<Pages.Repos />}>
                 </Route>
               </Route>
