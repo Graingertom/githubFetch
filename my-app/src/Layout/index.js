@@ -2,9 +2,9 @@ import React from 'react'
 import { Outlet } from 'react-router-dom'
 import {default as Header } from './Header'
 
-export const Layout = ({getUser}) => (
+export const Layout = () => (
     <>
-    <Header getUser={getUser} />
+    <Header />
     <main>
         <Outlet />
     </main>

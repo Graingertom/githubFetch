@@ -3,7 +3,7 @@ import { NavLink, useNavigate } from 'react-router-dom';
 import { ImGithub } from 'react-icons/im'
 import './styles.css'
 
-const Header = ({getUser}) => {
+const Header = () => {
 
     const goTo = useNavigate();
 
@@ -11,7 +11,6 @@ const Header = ({getUser}) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        getUser(username);
         goTo(`${username}`)
     }
 
