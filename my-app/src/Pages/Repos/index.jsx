@@ -9,7 +9,6 @@ export const Repos = () => {
 
 return(
     <>
-    <h1>Your Repos!</h1>
     <DisplayResults username={username}/>
     </>
 )

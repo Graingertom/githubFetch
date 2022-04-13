@@ -4,7 +4,7 @@ import axios from 'axios';
 // import Row from 'react-bootstrap/Row';
 // import Col from 'react-bootstrap/Col';
 import { AiOutlineStar, AiOutlineFork } from 'react-icons/ai';
-import { VscIssues, VscGitPullRequest } from 'react-icons/vsc';
+import { VscIssues } from 'react-icons/vsc';
 import './style.css';
 
 export const DisplayResults = ({username}) => {
@@ -30,17 +30,17 @@ export const DisplayResults = ({username}) => {
         <>
             <h1>{username}'s Repos</h1>
             { userData &&
-                userData.map((user, index) => (            
-            <div key={index} className='row'>
+                userData.map((user, index) => (
+            <div key={index} className='container'>            
+            <div className='row'>
                 <h3>{user.name}</h3>
                 <p>{user.description}</p>
                 <div className="icon">
-                    <span>tech</span>
-                    <span><AiOutlineStar />1</span>
+                    <span><AiOutlineStar />{user.stargazers_count}</span>
                     <span><AiOutlineFork />{user.forks_count}</span>
-                    <span><VscIssues />0</span>
-                    <span><VscGitPullRequest />3</span>
-                    <span>Udpated</span>
+                    <span><VscIssues />{user.open_issues_count}</span>
+                    <span>{user.updated_at}</span>
+                </div>
                 </div>
             </div>
                 ))
