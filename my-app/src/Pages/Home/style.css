@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -11,7 +13,6 @@ body{
 }
 
 .container{
-    border-top: 1px solid grey;
     display:flex ;
     flex-direction: column;
     align-items: center;
@@ -26,6 +27,8 @@ body{
     border: 1px solid grey;
     border-radius: 0.625rem;
     width: 60%;
+    font-family: 'Noto Sans', sans-serif;
+    line-height: 2;
 }
 
 .icon{
@@ -46,5 +49,5 @@ span{
 }
 
 svg :hover{
-    color: black;
+    color: white;
 }

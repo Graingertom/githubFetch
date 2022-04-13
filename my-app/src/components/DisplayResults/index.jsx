@@ -39,7 +39,7 @@ export const DisplayResults = ({username}) => {
                     <span><AiOutlineStar />{user.stargazers_count}</span>
                     <span><AiOutlineFork />{user.forks_count}</span>
                     <span><VscIssues />{user.open_issues_count}</span>
-                    <span>{user.updated_at}</span>
+                    <span>{user.updated_at.replaceAll('T' , ' ').replaceAll('Z', ' ')}</span>
                 </div>
                 </div>
             </div>
